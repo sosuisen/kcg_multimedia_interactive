@@ -7,41 +7,25 @@ const atlasData = {
 	frames: {
 		fly0: {
 			frame: { x: 0, y: 0, w: 126, h: 126 },
-			sourceSize: { w: 126, h: 126 },
-			spriteSourceSize: { x: 0, y: 0, w: 126, h: 126 }
 		},
 		fly1: {
 			frame: { x: 126, y: 0, w: 126, h: 126 },
-			sourceSize: { w: 126, h: 126 },
-			spriteSourceSize: { x: 0, y: 0, w: 126, h: 126 }
 		},
 		fly2: {
 			frame: { x: 252, y: 0, w: 126, h: 126 },
-			sourceSize: { w: 126, h: 126 },
-			spriteSourceSize: { x: 0, y: 0, w: 126, h: 126 }
 		},
 		fly3: {
 			frame: { x: 378, y: 0, w: 126, h: 126 },
-			sourceSize: { w: 126, h: 126 },
-			spriteSourceSize: { x: 0, y: 0, w: 126, h: 126 }
 		},
 		fly4: {
 			frame: { x: 504, y: 0, w: 126, h: 126 },
-			sourceSize: { w: 126, h: 126 },
-			spriteSourceSize: { x: 0, y: 0, w: 126, h: 126 }
 		},
 		fly5: {
 			frame: { x: 630, y: 0, w: 126, h: 126 },
-			sourceSize: { w: 126, h: 126 },
-			spriteSourceSize: { x: 0, y: 0, w: 126, h: 126 }
 		},
-
 	},
 	meta: {
 		image: 'spritesheet.png',
-		format: 'RGBA8888',
-		size: { w: 768, h: 126 },
-		scale: 1
 	},
 	animations: {
 		fly: ['fly0', 'fly1', 'fly2', 'fly3', 'fly4', 'fly5'],
