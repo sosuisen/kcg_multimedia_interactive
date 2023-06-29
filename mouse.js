@@ -18,7 +18,7 @@ parentObj.beginFill(0xffb090);
 parentObj.drawRoundedRect(0, 0, 480, 360);
 parentObj.endFill();
 parentObj.position.set(80, 60);
-parentObj.eventMode = 'dynamic';
+parentObj.eventMode = 'static';
 parentObj.on('pointermove', event => {
     const localPos = event.data.getLocalPosition(event.currentTarget);
     console.log(`[parent] screen(${event.screen.x}, ${event.screen.y}), local(${localPos.x}, ${localPos.y}))`);
@@ -48,7 +48,7 @@ childObj.beginFill(0xa0a0f0);
 childObj.drawCircle(0, 0, 120);
 childObj.position.set(320, 240); 
 childObj.endFill();
-childObj.eventMode = 'dynamic';
+childObj.eventMode = 'static';
 childObj.interactiveChildren = false;
 childObj.on('pointermove', event => {
     // オブジェクト内のローカル座標系
@@ -74,7 +74,7 @@ gsap.to(yellowStar, { duration: 5, repeat: -1, ease: 'none', pixi: {
 
 /*
 // マウスが画面上のどこにあっても反応するようにする
-app.stage.eventMode = 'dynamic';
+app.stage.eventMode = 'static';
 app.stage.on('globalpointermove', (event) => {
     console.log(`[global] screen(${event.screen.x}, ${event.screen.y}))`);
 });
