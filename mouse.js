@@ -21,7 +21,7 @@ largeObj.position.set(80, 60);
 largeObj.eventMode = 'static';
 largeObj.on('pointermove', event => {
     const localPos = event.getLocalPosition(event.currentTarget);
-    console.log(`[parent] screen(${event.screen.x}, ${event.screen.y}), local(${localPos.x}, ${localPos.y}))`);
+    console.log(`[large] global(${event.screen.x}, ${event.screen.y}), local(${localPos.x}, ${localPos.y}))`);
     // greenStarはapp.stageの子なので、グローバル座標を指定する。
     // マウスの位置へ移動
     // greenStar.position = event.screen;
@@ -54,7 +54,7 @@ smallObj.on('pointermove', event => {
     // オブジェクト内のローカル座標系
     // 円の場合、中心が(0, 0)となる。
     const localPos = event.getLocalPosition(event.currentTarget);
-    console.log(`[child] screen(${event.screen.x}, ${event.screen.y}), local(${localPos.x}, ${localPos.y}))`);
+    console.log(`[small] global(${event.screen.x}, ${event.screen.y}), local(${localPos.x}, ${localPos.y}))`);
     // yellowStarはsmallObjの子なので、smallObjのローカル座標を指定する。
     // yellowStar.position = localPos;
     // マウスの位置までアニメーションさせるとよりスムーズ
@@ -76,6 +76,6 @@ gsap.to(yellowStar, { duration: 5, repeat: -1, ease: 'none', pixi: {
 // マウスが画面上のどこにあっても反応するようにする
 app.stage.eventMode = 'static';
 app.stage.on('globalpointermove', (event) => {
-    console.log(`[global] screen(${event.screen.x}, ${event.screen.y}))`);
+    console.log(`[global] global(${event.screen.x}, ${event.screen.y}))`);
 });
 */
