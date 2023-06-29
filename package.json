@@ -13,10 +13,10 @@
   "comment": [
     "comment2023/3/2時点のPixiJS v7.1.3には",
     "getLocalPositionメソッドが含まれていないため。",
-    "7.2.0-rcを使うこと。"
+    "7.2.0以降を使うこと。"
   ],
   "dependencies": {
     "gsap": "^3.11.4",
-    "pixi.js": "^7.2.0-rc"
+    "pixi.js": "^7.2.4"
   }
 }
