@@ -106,5 +106,5 @@ app.ticker.add(() => {
 });
 
 // スプライトをクリックしたときもアニメ再生
-anime.interactive = true;
+anime.eventMode = 'static';
 anime.on('pointerdown', () => playAnime());
