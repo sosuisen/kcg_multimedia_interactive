@@ -18,7 +18,7 @@ largeObj.beginFill(0xffb090);
 largeObj.drawRoundedRect(0, 0, 480, 360);
 largeObj.endFill();
 largeObj.position.set(80, 60);
-largeObj.interactive = true;
+largeObj.eventMode = 'dynamic';
 largeObj.on('pointermove', (event) => {
     console.log(`[stage] screen(${event.screen.x}, ${event.screen.y}))`);
     // greenStarはapp.stageの子なので、スクリーン座標を指定する。
@@ -47,7 +47,7 @@ smallObj.beginFill(0xa0a0f0);
 smallObj.drawCircle(0, 0, 120);
 smallObj.position.set(320, 240); 
 smallObj.endFill();
-smallObj.interactive = true;
+smallObj.eventMode = 'dynamic';
 smallObj.interactiveChildren = false;
 smallObj.on('pointermove', (event) => {
     // オブジェクト内のローカル座標系
@@ -69,4 +69,12 @@ smallObj.addChild(yellowStar);
 gsap.to(yellowStar, { duration: 5, repeat: -1, ease: 'none', pixi: {
     rotation: -360,
 }});
+*/
+
+/*
+// マウスが画面上のどこにあっても反応するようにする
+app.stage.eventMode = 'dynamic';
+app.stage.on('globalpointermove', (event) => {
+    console.log(`[global] screen(${event.screen.x}, ${event.screen.y}))`);
+});
 */
