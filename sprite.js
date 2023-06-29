@@ -46,7 +46,6 @@ anime.loop = false; // アニメをループさせない
 app.stage.addChild(anime);
 
 const playAnime = () => {
-	// ループしていないアニメは再生時にフレーム0へ戻す必要がある
 	anime.gotoAndPlay(0);
 };
 
