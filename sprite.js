@@ -5,23 +5,23 @@ document.body.appendChild(app.view);
 
 const atlasData = {
 	frames: {
-		fly0: {
-			frame: { x: 0, y: 0, w: 126, h: 126 },
+    fly0: {
+			frame: { x: 0, y:0, w:128, h:128 },
 		},
-		fly1: {
-			frame: { x: 126, y: 0, w: 126, h: 126 },
+    fly1: {
+			frame: { x: 128, y:0, w:128, h:128 },
 		},
-		fly2: {
-			frame: { x: 252, y: 0, w: 126, h: 126 },
+    fly2: {
+			frame: { x: 256, y:0, w:128, h:128 },
 		},
-		fly3: {
-			frame: { x: 378, y: 0, w: 126, h: 126 },
+    fly3: {
+			frame: { x: 384, y:0, w:128, h:128 },
 		},
-		fly4: {
-			frame: { x: 504, y: 0, w: 126, h: 126 },
+    fly4: {
+			frame: { x: 512, y:0, w:128, h:128 },
 		},
-		fly5: {
-			frame: { x: 630, y: 0, w: 126, h: 126 },
+    fly5: {
+			frame: { x: 640, y:0, w:128, h:128 },
 		},
 	},
 	meta: {
