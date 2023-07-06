@@ -89,15 +89,15 @@ const spritesheet = new PIXI.Spritesheet(
 );
 await spritesheet.parse();
 
-// 現在の移動方向
-let currentMove = '';
-
 // 初期値は walkDown
 const anime = new PIXI.AnimatedSprite(spritesheet.animations.walkDown);
 anime.loop = true;
 anime.animationSpeed = 0.1;
 anime.play();
 app.stage.addChild(anime);
+
+// 現在の移動方向
+let currentMove = '';
 
 // アニメ再生
 const play = (animeName, loop = true) => {
